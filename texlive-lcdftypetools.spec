@@ -1,3 +1,9 @@
+# revision 23142
+# category TLCore
+# catalog-ctan /fonts/utilities/lcdf-typetools
+# catalog-date 2011-06-15 00:11:19 +0200
+# catalog-license gpl
+# catalog-version 2.91
 Name:		texlive-lcdftypetools
 Version:	2.91
 Release:	1
@@ -60,6 +66,7 @@ software.
 %doc %{_texmfdir}/doc/man/man1/t1testpage.man1.pdf
 %doc %{_mandir}/man1/ttftotype42.1*
 %doc %{_texmfdir}/doc/man/man1/ttftotype42.man1.pdf
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -72,3 +79,5 @@ mkdir -p %{buildroot}%{_datadir}
 cp -fpar texmf %{buildroot}%{_datadir}
 mkdir -p %{buildroot}%{_mandir}/man1
 mv %{buildroot}%{_texmfdir}/doc/man/man1/*.1 %{buildroot}%{_mandir}/man1
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
