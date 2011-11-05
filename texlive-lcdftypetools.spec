@@ -15,7 +15,7 @@ Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lcdftypetools.tar
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lcdftypetools.doc.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
-Requires(post):	texlive-tlpkg
+Requires(pre):	texlive-tlpkg
 Requires:	texlive-glyphlist
 Requires:	texlive-lcdftypetools.bin
 Conflicts:	texlive-texmf <= 20110705-3
