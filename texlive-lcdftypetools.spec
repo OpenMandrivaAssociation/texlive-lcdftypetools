@@ -1,12 +1,12 @@
-# revision 23142
+# revision 26689
 # category TLCore
 # catalog-ctan /fonts/utilities/lcdf-typetools
-# catalog-date 2011-06-15 00:11:19 +0200
+# catalog-date 2011-08-16 07:19:07 +0200
 # catalog-license gpl
-# catalog-version 2.91
+# catalog-version 2.92
 Name:		texlive-lcdftypetools
-Version:	2.91
-Release:	2
+Version:	2.92
+Release:	1
 Summary:	A bundle of outline font manipulation tools
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/utilities/lcdf-typetools
