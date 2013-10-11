@@ -1,11 +1,11 @@
-# revision 26689
+# revision 29764
 # category TLCore
 # catalog-ctan /fonts/utilities/lcdf-typetools
-# catalog-date 2011-08-16 07:19:07 +0200
+# catalog-date 2012-10-26 00:32:45 +0200
 # catalog-license gpl
-# catalog-version 2.92
+# catalog-version 2.97
 Name:		texlive-lcdftypetools
-Version:	2.92
+Version:	2.97
 Release:	1
 Summary:	A bundle of outline font manipulation tools
 Group:		Publishing
@@ -43,27 +43,27 @@ software.
 #-----------------------------------------------------------------------
 %files
 %doc %{_mandir}/man1/cfftot1.1*
-%doc %{_texmfdir}/doc/man/man1/cfftot1.man1.pdf
+%doc %{_texmfdistdir}/doc/man/man1/cfftot1.man1.pdf
 %doc %{_mandir}/man1/mmafm.1*
-%doc %{_texmfdir}/doc/man/man1/mmafm.man1.pdf
+%doc %{_texmfdistdir}/doc/man/man1/mmafm.man1.pdf
 %doc %{_mandir}/man1/mmpfb.1*
-%doc %{_texmfdir}/doc/man/man1/mmpfb.man1.pdf
+%doc %{_texmfdistdir}/doc/man/man1/mmpfb.man1.pdf
 %doc %{_mandir}/man1/otfinfo.1*
-%doc %{_texmfdir}/doc/man/man1/otfinfo.man1.pdf
+%doc %{_texmfdistdir}/doc/man/man1/otfinfo.man1.pdf
 %doc %{_mandir}/man1/otftotfm.1*
-%doc %{_texmfdir}/doc/man/man1/otftotfm.man1.pdf
+%doc %{_texmfdistdir}/doc/man/man1/otftotfm.man1.pdf
 %doc %{_mandir}/man1/t1dotlessj.1*
-%doc %{_texmfdir}/doc/man/man1/t1dotlessj.man1.pdf
+%doc %{_texmfdistdir}/doc/man/man1/t1dotlessj.man1.pdf
 %doc %{_mandir}/man1/t1lint.1*
-%doc %{_texmfdir}/doc/man/man1/t1lint.man1.pdf
+%doc %{_texmfdistdir}/doc/man/man1/t1lint.man1.pdf
 %doc %{_mandir}/man1/t1rawafm.1*
-%doc %{_texmfdir}/doc/man/man1/t1rawafm.man1.pdf
+%doc %{_texmfdistdir}/doc/man/man1/t1rawafm.man1.pdf
 %doc %{_mandir}/man1/t1reencode.1*
-%doc %{_texmfdir}/doc/man/man1/t1reencode.man1.pdf
+%doc %{_texmfdistdir}/doc/man/man1/t1reencode.man1.pdf
 %doc %{_mandir}/man1/t1testpage.1*
-%doc %{_texmfdir}/doc/man/man1/t1testpage.man1.pdf
+%doc %{_texmfdistdir}/doc/man/man1/t1testpage.man1.pdf
 %doc %{_mandir}/man1/ttftotype42.1*
-%doc %{_texmfdir}/doc/man/man1/ttftotype42.man1.pdf
+%doc %{_texmfdistdir}/doc/man/man1/ttftotype42.man1.pdf
 
 #-----------------------------------------------------------------------
 %prep
@@ -73,24 +73,6 @@ software.
 
 %install
 mkdir -p %{buildroot}%{_datadir}
-cp -fpar texmf %{buildroot}%{_datadir}
+cp -fpar texmf-dist %{buildroot}%{_datadir}
 mkdir -p %{buildroot}%{_mandir}/man1
-mv %{buildroot}%{_texmfdir}/doc/man/man1/*.1 %{buildroot}%{_mandir}/man1
-
-
-%changelog
-* Wed Aug 08 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.92-1
-+ Revision: 812561
-- Update to latest release.
-
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.91-2
-+ Revision: 753210
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.91-1
-+ Revision: 718837
-- texlive-lcdftypetools
-- texlive-lcdftypetools
-- texlive-lcdftypetools
-- texlive-lcdftypetools
-
+mv %{buildroot}%{_texmfdistdir}/doc/man/man1/*.1 %{buildroot}%{_mandir}/man1
