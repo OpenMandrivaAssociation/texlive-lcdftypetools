@@ -6,7 +6,7 @@
 # catalog-version 2.98
 Name:		texlive-lcdftypetools
 Version:	2.98
-Release:	4
+Release:	5
 Summary:	A bundle of outline font manipulation tools
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/utilities/lcdf-typetools
