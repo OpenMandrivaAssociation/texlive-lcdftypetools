@@ -1,18 +1,12 @@
-# revision 33736
-# category TLCore
-# catalog-ctan /fonts/utilities/lcdf-typetools
-# catalog-date 2014-01-06 13:53:04 +0100
-# catalog-license gpl
-# catalog-version 2.98
 Name:		texlive-lcdftypetools
-Version:	2.98
-Release:	5
+Version:	52851
+Release:	1
 Summary:	A bundle of outline font manipulation tools
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/utilities/lcdf-typetools
 License:	GPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lcdftypetools.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lcdftypetools.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lcdftypetools.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lcdftypetools.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -66,7 +60,7 @@ for a Type 1 font. It is preliminary software.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
