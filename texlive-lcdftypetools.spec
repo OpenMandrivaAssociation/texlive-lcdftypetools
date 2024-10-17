@@ -3,7 +3,7 @@ Version:	70015
 Release:	1
 Summary:	A bundle of outline font manipulation tools
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/fonts/utilities/lcdf-typetools
+URL:		https://www.ctan.org/tex-archive/fonts/utilities/lcdf-typetools
 License:	GPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lcdftypetools.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lcdftypetools.doc.r%{version}.tar.xz
